@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Muli:600|Poppins" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="style.css">
       <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
@@ -13,8 +14,31 @@
 
          <div class="grid-container">
 
+            <!-- First row - item 0, 1, 2 -->
+            <div class="grid-item h-top v-left d-back ">
+               <!-- <i class="fa fa-circle-o fa-5x"></i> -->
+            </div>
+            <div class="grid-item h-top v-center">
+               <!-- <i class="fa fa-times fa-5x"></i> -->
+            </div>
+            <div class="grid-item h-top v-right d-forward "></div>
+
+            <!-- First row - item 3, 4, 5 -->
+            <div class="grid-item h-center v-left"></div>
+            <div class="grid-item h-center v-center d-back d-forward "></div>
+            <div class="grid-item h-center v-right"></div>
+
+            <!-- First row - item 6, 7, 8 -->
+            <div class="grid-item h-bottom v-left d-forward "></div>
+            <div class="grid-item h-bottom v-center"></div>
+            <div class="grid-item h-bottom v-right d-back "></div>
+
          </div>
 
+         <div id="result" class="">
+            <h2>Vincitore:</h2>
+            <span></span>
+         </div>
       </main>
 
 
