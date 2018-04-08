@@ -43,9 +43,9 @@ $(document).ready(function(){
             $winAlert.children('span').html(lastPlayer.scelta);
             $winAlert.fadeIn(250);
 
-            $('.grid-item').addClass('unclickable');
+            $('.grid-item').addClass('locked');
          }
-         
+
          //Funzione che riceve il giocatore corrente e passa il turno all'altro giocatore
          function switchPlayer(currentPlayer) {
             var nextPlayer = {};
