@@ -39,11 +39,13 @@ $(document).ready(function(){
          var tipoGiocata = getTypeOfChoice($(this));
 
          if ( isThereAWinner(classArray, tipoGiocata) ) {
+            $('.grid-item').addClass('locked');
             var $winAlert = $('#result');
             $winAlert.children('span').html(lastPlayer.scelta);
             $winAlert.fadeIn(250);
-
-            $('.grid-item').addClass('locked');
+            $('#restart').click(function(){
+               location.reload();
+            });
          }
 
          //Funzione che riceve il giocatore corrente e passa il turno all'altro giocatore

@@ -25,6 +25,7 @@ main {
 .grid-item {
    border: 2px solid rgb(255, 255, 255);
    border-radius: 50%;
+   cursor: pointer;
 
 }
 
@@ -55,18 +56,27 @@ i {
 
 #result {
    display: none;
-   width: 350px;
-   height: 250px;
+   width: 380px;
+   height: 280px;
    position: absolute;
-   background-color: rgba(24, 218, 32, 0.59);
+   background-color: rgba(219, 235, 220, 0.59);
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    text-align: center;
    font-size: 30px;
-   line-height: 100px;
+   line-height: 80px;
 }
 
 span {
    font-weight: bold;
+}
+
+#restart {
+   margin: 40px;
+   cursor: pointer;
+}
+
+#restart i:hover {
+   color: rgb(38, 95, 207);
 }
